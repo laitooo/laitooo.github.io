@@ -15,6 +15,9 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
+        <link rel="stylesheet" href="assets/css/myStyle.css">
+        <link rel="stylesheet" href="files/css/style.css">
+        <link rel="stylesheet" href="files/css/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Fonts -->
@@ -34,6 +37,32 @@
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/responsive.css" rel="stylesheet">
 
+
+        <script>
+          function showModal(src) {
+      
+            document.getElementById('imageModalImage').src = src;
+            document.getElementById('imageModal').style.display = 'block';
+          }
+      
+          function showCategory(categoryName) {
+            var categoryClass = "." + categoryName;
+            $(".project").hide();
+            $(categoryClass).show();
+          }
+      
+          function showAll() {
+            $(".project").show();
+          }
+        </script>
+      
+        <style>
+          .my_image {
+            width: 100%;
+            height: 220px;
+          }
+        </style>
+      
     </head>
     <body>
         <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
@@ -99,66 +128,23 @@
                         <div class="col-md-6 col-md-offset-3">
                             <h2>About</h2>
                             <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                            <p>Hello! I'm Alzobair, a senior software developer, Experienced in mobile apps development. Interested in developing games and learning everything. Enjoys implementing Artificial intelligence ideas in mobile apps.</p>
-                            <a href="cv4.pdf" class="btn btn-fill" target="_blank" download>Download my cv</a>
+                            <p>Hello! I'm Alzobair, a senior software developer; Experienced in mobile apps development. Interested in developing games and learning everything. Enjoys implementing Artificial intelligence ideas in mobile apps.</p>
+                            <a href="alziberMohammedCv.pdf" class="btn btn-fill" target="_blank" download>Download my cv</a>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
                         </div>
                     </div>
                 </div>
             </section><!-- /.secton-about -->
-    
-            <section class="site-section section-skills">
-                <div class="container">
-                    <div class="text-center">
-                        <h3>My Skills</h3>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="skill">
-                                <h4>Dart</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="93"></div><!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>Java</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="86"></div><!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skill">
-                                <h4>Python</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="82"></div><!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>Javascript</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="77"></div><!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skill">
-                                <h4>C#</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="72"></div><!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                            <div class="skill">
-                                <h4>Html/Css</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" data-transitiongoal="67"></div><!-- /.progress-bar -->
-                                </div><!-- /.progress -->
-                            </div><!-- /.skill -->
-                        </div>
-                    </div>
-                </div>
-            </section><!-- /.secton-skills -->
-    
+        
+            <div id="imageModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+              <div class="w3-center ">
+                <img id="imageModalImage" class="w3-modal-content "  style="width: 100%" src="">
+              </div>
+            </div>
+
             <section id="service" class="site-section section-services overlay text-center">
                 <div class="container">
                     <div class="row">
@@ -191,106 +177,215 @@
                 </div>
             </section><!-- /.secton-services -->
     
-            <section id="portfolio" class="site-section section-portfolio">
+            <section id="portfolio" class="site-section">
                 <div class="container">
                     <div class="text-center">
-                        <h3>My recent Works</h3>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/manga2.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Manga Online</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://play.google.com/store/apps/details?id=zxc.laitooo.manga.online"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
+                      <header id="portfolio">
+                        <a href="#"><img src="./files/images/profile_square.jpg" style="width:65px;"
+                            class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+                        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                            class="fa fa-bars"></i></span>
+                        <div class="w3-container">
+                          <div class="w3-section w3-bottombar w3-padding-16">
+                            <div class="text-center">
+                              <h3>My recent Works</h3>
+                              <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                            </div>
+                            <span class="w3-margin-right">Filter:</span>
+                            <button class="w3-button w3-black" onclick="showAll()">ALL</button>
+                  
+                            <button class="w3-button w3-white  " onclick="showCategory('flutter')">
+                              <img src="assets/icons/flutter.svg" width="26" height="26"> 
+                              Flutter</button>
+                  
+                            <button class="w3-button w3-white" onclick="showCategory('android')">
+                              <img src="assets/icons/android.svg" width="26" height="26"> 
+                              Android</button>
+
+                          
+                            <button class="w3-button w3-white " onclick="showCategory('unity')">  
+                              <img src="assets/icons/unity.svg" width="26" height="26"> 
+                              Unity</button>
+
+                          </div>
                         </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/werewolf2.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Werewolf Online</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://github.com/laitooo/Werewolf-Online"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/zombie1.jpeg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Plants vs zombies</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://www.youtube.com/watch?v=vn2zIqOBnsc"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/ai_concrete1.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>AI concrete</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://github.com/laitooo/Predicting-Concrete-Compressive-Strength"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/riwayat3.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Riwayat space</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://play.google.com/store/apps/details?id=zxc.laitooo.flutter.riwayat_space"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/manga_scrapper1.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Flutter Manga scrapper</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://github.com/laitooo/flutter_manga_scraper"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/sudoko1.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Sudoko</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem7"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://github.com/laitooo/Sudoku"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/eva1.jpg" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Eva</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem8"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://github.com/laitooo/Eva"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
-                        <div class="col-md-4 col-xs-9">
-                            <div class="portfolio-item">
-                                <img src="manga/space_shooter1.png" class="img-res" alt="">
-                                <div class="portfolio-item-info">
-                                    <h4>Space shooter</h4>
-                                    <a href="#" data-toggle="modal" data-target="#portfolioItem9"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                    <a href="https://laitooo.github.io/Space-Shooter/"><span class="glyphicon glyphicon-link"></span></a>
-                                </div><!-- /.portfolio-item-info -->
-                            </div><!-- /.portfolio-item -->
-                        </div>
+                      </header>
                     </div>
                 </div>
             </section><!-- /.secton-portfolio -->
+
+            <!-- Header -->
+    
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+
+       <!-- Manga online app -->
+       <div class="w3-third w3-container w3-margin-bottom project flutter">
+        <img src="images/manga.jpg" alt="Manga" onclick="showModal(this.src);"
+          class="w3-hover-opacity my_image">
+        <div class="w3-container w3-white">
+        </br>
+          <p><b>Manga online</b></p>
+          <p>
+            It's a free application for reading Asian manga of all kinds on the mobile phone.
+                    A simple yet effective Arabic manga app that provides a great reading experience
+                    Simplicity and speed in downloading chapters. 10k+ downloads on 
+                    <a href="https://play.google.com/store/apps/details?id=zxc.laitooo.manga.online" target="_blank">
+              Google play
+            </a>
+          </p>
+          <a href='https://play.google.com/store/apps/details?id=zxc.laitooo.manga.online'>
+            <img 
+              class="android" 
+              alt='Get it on Google Play' 
+              src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
+              width="150"
+              height="60" />
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Werewolf Online -->
+      <div class="w3-third w3-container w3-margin-bottom project android">
+        <img src="images/werewolf.jpg" alt="werewolf" onclick="showModal(this.src);"
+          class="w3-hover-opacity my_image">
+        <div class="w3-container w3-white">
+          </br>
+          <p><b>Werewolf Online</b></p>
+          <p>A multiplayer android mobile game that has two teams (werewolfs and villagers) competing to kill each other , the team that all his members dies first lose the game .
+             It contains a lot of feature like firends chats, groups and voice chat for group games.</p>
+          
+          <a href="https://github.com/laitooo/Werewolf-Online">
+            <button class="githubButton">
+              <img src="assets/icons/github.svg" width="26" height="26"> 
+              GitHub            
+            </button>
+          </a>      
+        </div>
+      </div>
+
+     
+      <!-- Plants vs zombies -->
+      <div class="w3-third w3-container w3-margin-bottom project unity">
+        <img src="manga/zombie1.jpeg" alt="Pvz" onclick="showModal(this.src);"
+          class="w3-hover-opacity my_image">
+        <div class="w3-container w3-white">
+          </br>
+          <p><b>Plants vs zombies clone</b></p>
+          <p>A simple Plants vs zombies game clone made in unity with C#.</p>
+          <a href="https://www.youtube.com/watch?v=vn2zIqOBnsc">
+            <button class="youtubeButton">
+              <img src="assets/icons/youtube.svg" width="26" height="26"> 
+              Youtube            
+            </button>
+          </a>      
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+
+
+      
+      <!-- Riwayat space -->
+      <div class="w3-third w3-container w3-margin-bottom project flutter">
+        <img src="manga/riwayat1.png" onclick="showModal(this.src);" alt="Norway" style="width:100%"
+          class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          </br>
+          <p><b>Riwayat space</b></p>
+          <p>The space of novels is a mobile application that offers you novels of backward classifications to read and with a professional Arabic translation.
+            The novels space application is characterized by several advantages, namely:
+            </br>• Continuous updating of novels and chapters, where new content is added daily.
+            </br>• Ease and simplicity of use, a fast and easy application to navigate between novels and chapters</p>
+          <a href='https://play.google.com/store/apps/details?id=zxc.laitooo.flutter.riwayat_space'>
+            <img 
+              class="android" 
+              alt='Get it on Google Play' 
+              src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
+              width="150"
+              height="60" />
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- Flutter manga scrapper -->
+
+      <div class="w3-third w3-container w3-margin-bottom project flutter">
+        <img src="manga/manga_scrapper1.png" onclick="showModal(this.src);" alt="Norway" style="width:100%"
+          class="w3-hover-opacity ">
+        <div class="w3-container w3-white">
+          </br>
+          <p><b>Flutter manga scrapper </b></p>
+          <p>A flutter mobile application for scraping and downloading manga from Manga town</p>
+          
+          <a href="https://github.com/laitooo/flutter_manga_scraper">
+            <button class="githubButton">
+              <img src="assets/icons/github.svg" width="26" height="26"> 
+              GitHub            
+            </button>
+          </a>      
+        </div>
+      </div>
+
+      <!-- My Lyrics -->
+      <div class="w3-third w3-container w3-margin-bottom project web">
+        <img src="./files/images/my_lyrics.jpg" onclick="showModal(this.src);" alt="Norway" style="width:100%"
+          class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>My Lyrics</b></p>
+          <p>A website to get lyrics with one click</p>
+          <p>
+            You can try it in the link : <a href="http://mylyrics44.herokuapp.com/" target="_blank">
+              http://mylyrics44.herokuapp.com/
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
+
+
+      <!-- University Website -->
+      <div class="w3-third w3-container w3-margin-bottom project web">
+        <img src="./files/images/university_website.jpg" onclick="showModal(this.src);" alt="Norway"
+          style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>University Website</b></p>
+          <p>A website to manage the communication between the students and the lecturers.</p>
+        </div>
+      </div>
+
+      
+      <!-- Random Number Picker -->
+      <div class="w3-third w3-container w3-margin-bottom project desktop">
+        <img src="./files/images/random_picker.jpg" alt="Norway" onclick="showModal(this.src);" style="width:100%"
+          class="w3-hover-opacity my_image">
+        <div class="w3-container w3-white">
+          <p><b>Random Number Picker</b></p>
+          <p>Desktop app to pick a random number for winning prize.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- End page content -->
+  </div>
         
             <section id="contact" class="site-section section-form text-center">
                 <div class="container">
@@ -520,5 +615,57 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
         <script src="assets/js/jquery.countTo.min.js"></script>
         <script src="assets/js/script.js"></script>          
+
+        <script>
+          // Script to open and close sidebar
+          function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+          }
+      
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+          }
+        </script>
+      
+      
+        <style>
+          .tb_button {
+            padding: 1px;
+            cursor: pointer;
+            border-right: 1px solid #8b8b8b;
+            border-left: 1px solid #FFF;
+            border-bottom: 1px solid #fff;
+          }
+      
+          .tb_button.hover {
+            border: 2px outset #def;
+            background-color: #f8f8f8 !important;
+          }
+      
+          .ws_toolbar {
+            z-index: 100000
+          }
+      
+          .ws_toolbar .ws_tb_btn {
+            cursor: pointer;
+            border: 1px solid #555;
+            padding: 3px
+          }
+      
+          .tb_highlight {
+            background-color: yellow
+          }
+      
+          .tb_hide {
+            visibility: hidden
+          }
+      
+          .ws_toolbar img {
+            padding: 2px;
+            margin: 0px
+          }
+        </style>
     </body>
 </html>
