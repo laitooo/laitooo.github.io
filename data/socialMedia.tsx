@@ -1,0 +1,7 @@
+export const github = "https://github.com/laitooo"
+export const youtube = "https://www.youtube.com/channel/UCfEZyjklTwZsuniXj0I639Q"
+export const linkedin = "https://www.linkedin.com/in/alziber50/"
+export const telegram = "https://t.me/Laito_san"
+export const twitter = "https://twitter.com/killuasan25"
+export const facebook = "https://web.facebook.com/laito.san.94"
+export const email = "mailto:alziber50@gmail.com"
