@@ -57,7 +57,7 @@ export const toolsList: Tool[] = [
   {
     index: 3,
     name: "Unity",
-    icon: "/icons/unity.svg"
+    icon: "/icons/unity.png"
   },
   {
     index: 4,

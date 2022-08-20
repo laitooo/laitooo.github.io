@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 const ProjectCard = (probs: {project: Project}) => {
   return (
     <div>
-      <div className="card card-compact w-96 bg-base-100 shadow-xl" data-theme="night">
+      <div className="card card-compact w-96 bg-violet-700/[.5] shadow-xl">
         <figure>
           <img src={probs.project.imagePath} alt={probs.project.name} className="w-96 h-48 object-cover" />
         </figure>
@@ -50,7 +50,9 @@ function getButton(urlType: UrlType, url: string) {
       </a>
     case UrlType.demo:
       return <a href={url}>
-        <button className="btn btn-primary red">Try demo</button>
+        <button className="btn btn-secondary">
+          <p className="pl-2 pr-12">Try demo</p>
+        </button>
       </a>
     case UrlType.googlePlay:
       return <a href={url}>
