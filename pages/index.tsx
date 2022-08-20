@@ -15,7 +15,7 @@ const Home: NextPage = () => {
                     <img src="/images/profile.png" className="w-48 h-48" />
                     <div className="pl-10">
                         <p className="pt-10 text-5xl text-white font-semibold uppercase">Alzobair Mohammed</p>
-                        <p className="pt-5 text-2xl text-white">Senior software developer</p>
+                        <p className="pt-5 text-3xl text-white font-medium">Senior software developer</p>
                     </div>
                 </div>
                 <div className="grid place-items-center mt-20 py-20 mx-40 card bg-violet-700/[.35]">

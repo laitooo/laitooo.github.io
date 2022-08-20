@@ -5,12 +5,18 @@ import Footer from '../../components/footer'
 import { useState } from 'react'
 import { Project, ProjectCategory } from '../../models/project'
 import NavBar from '../../components/navbar'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
+  const router = useRouter()
+
   const [currentProjectsList, setProjectsList] = useState<Project[]>(projectsList);
 
   const openProjectDetails = (id: number) => {
-    window.location.href = "/projects/project?id=" + id.toString();
+    router.push({
+      pathname: '/projects/project',
+      query: { "id": id},
+    });
   }
 
   function showAll() {
@@ -21,6 +27,7 @@ const Home: NextPage = () => {
     setProjectsList(projectsList.filter((project) => project.category == category));
   }
 
+  
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
       <div className="backdrop-blur-sm">
