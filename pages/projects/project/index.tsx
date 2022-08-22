@@ -15,8 +15,12 @@ import { useEffect } from 'react'
 
 
 const ProjectDetails = () => {
-  const url = new URL(window.location.href);
-  var id = Number(url.searchParams.get("id"));
+  var id = 1;
+  if (typeof window !== "undefined") {
+    const url = new URL(window.location.href);
+    var id = Number(url.searchParams.get("id"));
+  }
+
   const project = projectsList.find((e) => e.id == id);
   // const numScreenshots = project?.screenshots.length;
 
@@ -29,7 +33,7 @@ const ProjectDetails = () => {
             {
               project?.screenshots.map((value, index) => {
                 return (
-                  <img src={value} className="pb-16 relative object-contain w-full h-[40rem]" />
+                  <Image key={index} alt="screenshot" src={value} className="pb-16 relative object-contain w-full h-[40rem]" />
                 )
               })
             }
