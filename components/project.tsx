@@ -1,16 +1,11 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import { Project, UrlType } from '../models/project'
-import styles from '../styles/Home.module.css'
 
 const ProjectCard = (probs: {project: Project}) => {
   return (
     <div>
       <div className="card card-compact w-96 bg-violet-700/[.5] shadow-xl">
         <figure>
-          <Image src={probs.project.imagePath} alt={probs.project.name} className="w-96 h-48 object-cover" />
+          <img src={probs.project.imagePath} alt={probs.project.name} className="w-96 h-48 object-cover" />
         </figure>
         <div className="card-body h-72">
           <h2 className="text-white text-2xl font-semibold">{probs.project.name}</h2>
@@ -31,7 +26,7 @@ function getButton(urlType: UrlType, url: string) {
     case UrlType.github:
       return <a href={url}>
         <button type="button" className="flex shadow-2xl space-x-2 px-6 py-4 items-center rounded-md w-40 text-white hover:bg-gray-600 bg-black">
-          <Image src="/icons/github.svg"
+          <img src="/icons/github.svg"
           alt="Github"
              className="w-5 h-5"/>
           <span>
@@ -42,7 +37,7 @@ function getButton(urlType: UrlType, url: string) {
     case UrlType.youtube:
       return <a href={url}>
         <button type="button" className="flex shadow-2xl space-x-2 px-6 py-4 items-center rounded-md w-40 text-white hover:bg-red-400 bg-red-600">
-          <Image src="/icons/youtube.svg"
+          <img src="/icons/youtube.svg"
           alt="Youtube"
              className="w-5 h-5"/>
           <span>
@@ -58,7 +53,7 @@ function getButton(urlType: UrlType, url: string) {
       </a>
     case UrlType.googlePlay:
       return <a href={url}>
-          <Image
+          <img
           alt="Google play"
           src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
           width={180} />
