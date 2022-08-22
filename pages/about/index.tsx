@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Footer from '../../components/footer'
 import NavBar from '../../components/navbar'
 import { languagesList, toolsList } from '../../data/toolsList'
-import Image from 'next/image'
 
 const Home: NextPage = () => {
     return (
@@ -29,7 +28,7 @@ const Home: NextPage = () => {
                             <br />&emsp;- Playing league of legends.
                         </p>
                     </div>
-                    <Image alt="illustration" className="pl-20 mt-24" src="/images/illustration.png"/>
+                    <img alt="illustration" className="pl-20 mt-24" src="/images/illustration.png"/>
                 </div>
                 <div className="grid place-items-center mt-40">
                     <p className="text-white uppercase text-3xl">Languages used</p>
@@ -38,7 +37,7 @@ const Home: NextPage = () => {
                             languagesList.map(tool => {
                                 return <div key={tool.index}
                                     className="grid place-items-center pt-4 w-40 h-48 transition duration-500 hover:scale-110 border-purple-500 border-2 bg-transparent rounded-md">
-                                    <Image alt="Language icon" className="w-28 h-28" src={tool.icon}/>
+                                    <img alt="Language icon" className="w-28 h-28" src={tool.icon}/>
                                     <p className="text-white text-3xl">{tool.name}</p>
                                 </div>
                             })
@@ -52,7 +51,7 @@ const Home: NextPage = () => {
                             toolsList.map(tool => {
                                 return <div key={tool.index}
                                     className="grid place-items-center pt-4 w-40 h-48 transition duration-500 hover:scale-110 border-purple-500 border-2 bg-transparent rounded-md">
-                                    <Image alt="Tool icon" className="w-28 h-28" src={tool.icon}/>
+                                    <img alt="Tool icon" className="w-28 h-28" src={tool.icon}/>
                                     <p className="text-white text-3xl">{tool.name}</p>
                                 </div>
                             })

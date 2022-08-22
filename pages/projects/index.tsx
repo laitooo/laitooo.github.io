@@ -6,7 +6,6 @@ import { useState } from 'react'
 import { Project, ProjectCategory } from '../../models/project'
 import NavBar from '../../components/navbar'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -41,18 +40,18 @@ const Home: NextPage = () => {
           </button>
 
           <button className="btn ml-5" onClick={() => showCategory(ProjectCategory.flutter)}>
-            <Image alt="Flutter" src="icons/flutter.svg" className="w-6 mr-2" />
+            <img alt="Flutter" src="icons/flutter.svg" className="w-6 mr-2" />
             <p className="text-xl">Flutter</p>
           </button>
 
           <button className="btn ml-5" onClick={() => showCategory(ProjectCategory.android)}>
-            <Image alt="Android" src="/icons/android.svg" className="w-6 mr-2" />
+            <img alt="Android" src="/icons/android.svg" className="w-6 mr-2" />
             <p className="text-xl">Android</p>
           </button>
 
 
           <button className="btn ml-5" onClick={() => showCategory(ProjectCategory.unity)}>
-            <Image alt="Unity" src="/icons/unity.png" className="w-6 mr-2" />
+            <img alt="Unity" src="/icons/unity.png" className="w-6 mr-2" />
             <p className="text-xl">Unity</p>
           </button>
 

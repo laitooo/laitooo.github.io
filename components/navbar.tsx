@@ -11,7 +11,9 @@ const NavBar: NextPage = () => {
 			<div className="backdrop-filter backdrop-blur-lg hidden lg:flex">
 				<div className="navbar bg-opacity-50">
 					<div className="flex-1">
-						<Link className="normal-case text-3xl pl-5 text-violet-400" href=".">Laitooo san</Link>
+						<Link href=".">
+							<p className="normal-case text-3xl pl-5 text-violet-400" >Laitooo san</p>
+						</Link>
 					</div>
 					<div className="flex-none text-violet-400">
 						<ul className="menu menu-horizontal p-0">
@@ -67,8 +69,9 @@ const NavBar: NextPage = () => {
 						</li>
 					</ul>
 				</div>
-				<Link className="normal-case text-3xl pl-5 text-violet-400 lg:hidden" href=".">Laitooo san</Link>
-
+				<Link href=".">
+					<p className="normal-case text-3xl pl-5 text-violet-400" >Laitooo san</p>
+				</Link>
 			</div>
 		</div>
 	)
