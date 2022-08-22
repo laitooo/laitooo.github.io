@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const NavBar: NextPage = () => {
@@ -10,29 +11,29 @@ const NavBar: NextPage = () => {
 			<div className="backdrop-filter backdrop-blur-lg hidden lg:flex">
 				<div className="navbar bg-opacity-50">
 					<div className="flex-1">
-						<a className="normal-case text-3xl pl-5 text-violet-400" href=".">Laitooo san</a>
+						<Link className="normal-case text-3xl pl-5 text-violet-400" href=".">Laitooo san</Link>
 					</div>
 					<div className="flex-none text-violet-400">
 						<ul className="menu menu-horizontal p-0">
 							<li>
-								<a href='/'>
+								<Link href='/'>
 									Home
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="/projects">
+								<Link href="/projects">
 									Projects
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="/cv">
+								<Link href="/cv">
 									My CV
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="/about">
+								<Link href="/about">
 									About me
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -41,32 +42,32 @@ const NavBar: NextPage = () => {
 			<div className="navbar bg-opacity-50 backdrop-filter backdrop-blur-lg lg:hidden">
 				<div className="dropdown">
 					<label tabIndex={0} className="btn lg:hidden">
-						<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
 					</label>
 					<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 						<li>
-							<a href='/'>
+							<Link href='/'>
 								Home
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/projects">
+							<Link href="/projects">
 								Projects
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/cv">
+							<Link href="/cv">
 								My CV
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/about">
+							<Link href="/about">
 								About me
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
-				<a className="normal-case text-3xl pl-5 text-violet-400 lg:hidden" href=".">Laitooo san</a>
+				<Link className="normal-case text-3xl pl-5 text-violet-400 lg:hidden" href=".">Laitooo san</Link>
 
 			</div>
 		</div>
@@ -79,7 +80,7 @@ export default NavBar
 //   <div class="navbar-start">
 //     <div class="dropdown">
 //       <label tabindex="0" class="btn btn-ghost lg:hidden">
-//         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+//         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
 //       </label>
 
 //       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">

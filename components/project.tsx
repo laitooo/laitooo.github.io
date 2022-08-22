@@ -10,7 +10,7 @@ const ProjectCard = (probs: {project: Project}) => {
     <div>
       <div className="card card-compact w-96 bg-violet-700/[.5] shadow-xl">
         <figure>
-          <img src={probs.project.imagePath} alt={probs.project.name} className="w-96 h-48 object-cover" />
+          <Image src={probs.project.imagePath} alt={probs.project.name} className="w-96 h-48 object-cover" />
         </figure>
         <div className="card-body h-72">
           <h2 className="text-white text-2xl font-semibold">{probs.project.name}</h2>
@@ -31,7 +31,8 @@ function getButton(urlType: UrlType, url: string) {
     case UrlType.github:
       return <a href={url}>
         <button type="button" className="flex shadow-2xl space-x-2 px-6 py-4 items-center rounded-md w-40 text-white hover:bg-gray-600 bg-black">
-          <img src="/icons/github.svg"
+          <Image src="/icons/github.svg"
+          alt="Github"
              className="w-5 h-5"/>
           <span>
             Github 
@@ -41,7 +42,8 @@ function getButton(urlType: UrlType, url: string) {
     case UrlType.youtube:
       return <a href={url}>
         <button type="button" className="flex shadow-2xl space-x-2 px-6 py-4 items-center rounded-md w-40 text-white hover:bg-red-400 bg-red-600">
-          <img src="/icons/youtube.svg"
+          <Image src="/icons/youtube.svg"
+          alt="Youtube"
              className="w-5 h-5"/>
           <span>
             Youtube 
@@ -56,7 +58,9 @@ function getButton(urlType: UrlType, url: string) {
       </a>
     case UrlType.googlePlay:
       return <a href={url}>
-          <img src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
+          <Image
+          alt="Google play"
+          src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
           width={180} />
       </a>
     default:
