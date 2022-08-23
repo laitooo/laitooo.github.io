@@ -8,9 +8,9 @@ const Footer: NextPage = () => {
 
     return (
         <div className="pb-6">
-            <div className="mx-auto text-white px-20">
-                <div className="pb-8 mb-2 border-t-2 border-gray-300 dark:border-white-300" />
-                <div className="flex flex-col justify-between lg:flex-row items-center">
+            <div className="text-white px-4 md:px-12 lg:px-20">
+                <div className="pb-4 lg:pb-8 mb-2 border-t-2 border-gray-300 dark:border-white-300" />
+                <div className="flex flex-col gap-5 md:gap-0 justify-between md:flex-row items-center">
                     <p>Built with Next.js, Tailwind</p>
                     <div className="flex flex-wrap justify-center gap-2">
                         <button className="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" onClick={() => window.location.href = facebook}>
