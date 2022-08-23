@@ -56,7 +56,7 @@ const Home: NextPage = () => {
           </button>
 
         </div>
-        <div className="grid grid-cols-3 gap-x-4 gap-y-8 px-10 pt-5 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 px-10 pt-5 pb-20">
           {
             currentProjectsList.sort((a, b) => (a.id < b.id ? -1 : 1)).map((item, index) => {
               return (
