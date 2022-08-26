@@ -57,7 +57,7 @@ export const projectsList: Project[] = [
   {
     id: 10,
     name: "Sudoku",
-    description: "A simple sudoku game built using flutter.",
+    description: "The famous sudoku game developed into mobile app using flutter (dart).",
     imagePath: "/screenshots/covers/sudoku.jpg",
     category: ProjectCategory.flutter,
     url: "https://github.com/laitooo/Sudoku",
@@ -68,7 +68,7 @@ export const projectsList: Project[] = [
     id: 11,
     name: "Space shooter",
     description: "Simple Space Shooter game using C# with Unity. The game theme is 'The game is a liar'",
-    imagePath: "https://laitooo.github.io/Portfolio/manga/space_shooter1.png",
+    imagePath: "/screenshots/cover/space_shooter.jpg",
     category: ProjectCategory.unity,
     url: "https://laitooo.github.io/Space-Shooter/",
     urlType: UrlType.demo,
