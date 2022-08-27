@@ -1,15 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+
 import Footer from '../../../components/footer'
 import NavBar from '../../../components/navbar'
 import { projectsList } from '../../../data/projectsList'
-import { Project, UrlType } from '../../../models/project'
-import styles from '../styles/Home.module.css'
 import { Carousel } from "flowbite-react"
-import { useEffect } from 'react'
+import MetaData from '../../../components/metadata'
 
 
 
@@ -26,6 +20,7 @@ const ProjectDetails = () => {
 
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
+      <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio project details page"></MetaData>
       <div className="backdrop-blur-sm">
         <NavBar />
         <div className="py-20">
@@ -33,7 +28,7 @@ const ProjectDetails = () => {
             {
               project?.screenshots.map((value, index) => {
                 return (
-                  <Image key={index} alt="screenshot" src={value} className="pb-16 relative object-contain w-full h-[40rem]" />
+                  <img key={index} alt="screenshot" src={value} className="pb-16 relative object-contain w-full h-[40rem]" />
                 )
               })
             }

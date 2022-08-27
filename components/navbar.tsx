@@ -12,7 +12,7 @@ const NavBar: NextPage = () => {
 				<div className="navbar bg-opacity-50">
 					<div className="flex-1">
 						<Link href=".">
-							<p className="normal-case text-3xl pl-5 text-violet-400" >Laitooo san</p>
+							<p className="btn btn-ghost normal-case text-3xl pl-5 text-violet-400" >Laitooo san</p>
 						</Link>
 					</div>
 					<div className="flex-none text-violet-400">
@@ -43,8 +43,8 @@ const NavBar: NextPage = () => {
 			</div>
 			<div className="navbar bg-opacity-50 backdrop-filter backdrop-blur-lg lg:hidden">
 				<div className="dropdown">
-					<label tabIndex={0} className="btn lg:hidden">
-						<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+					<label tabIndex={0} className="lg:hidden">
+						<img src="/icons/drawer.svg" className="btn btn-ghost w-14 h-14"></img>
 					</label>
 					<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 						<li>
@@ -70,7 +70,7 @@ const NavBar: NextPage = () => {
 					</ul>
 				</div>
 				<Link href=".">
-					<p className="normal-case text-3xl pl-5 text-violet-400" >Laitooo san</p>
+					<p className="btn btn-ghost normal-case text-3xl pl-5 text-violet-400" >Laitooo san</p>
 				</Link>
 			</div>
 		</div>

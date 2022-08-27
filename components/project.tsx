@@ -3,11 +3,12 @@ import { Project, UrlType } from '../models/project'
 const ProjectCard = (probs: {project: Project}) => {
   return (
     <div>
-      <div className="card card-compact w-96 bg-violet-700/[.5] shadow-xl">
+      <div className="card card-compact w-auto max-w-[24rem] bg-violet-700/[.5] shadow-xl">
         <figure>
-          <img src={probs.project.imagePath} alt={probs.project.name} className="w-96 h-48 object-cover" />
+          <img src={probs.project.imagePath} alt={probs.project.name} 
+          className="w-full h-48 object-cover" />
         </figure>
-        <div className="card-body h-72">
+        <div className="card-body h-80">
           <h2 className="text-white text-2xl font-semibold">{probs.project.name}</h2>
           <p className="text-base">{probs.project.description}</p>
           <div className="card-actions mt-2">
