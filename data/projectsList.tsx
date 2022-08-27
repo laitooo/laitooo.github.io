@@ -4,7 +4,7 @@ export const projectsList: Project[] = [
   {
     id: 1,
     name: "Manga Online",
-    description: "It's a free application for reading Asian manga of all kinds on the mobile phone. A simple yet effective Arabic manga app that provides a great reading experience Simplicity and speed in downloading chapters. 10k+ downloads on Google play.",
+    description: "It's a free application for reading Asian manga on the mobile phone. A simple yet effective app that provides a great reading experience Simplicity and speed in downloading chapters. 10k+ downloads on Google play.",
     imagePath: "/screenshots/covers/manga.jpg",
     category: ProjectCategory.flutter,
     url: "https://play.google.com/store/apps/details?id=zxc.laitooo.manga.online",
@@ -15,7 +15,7 @@ export const projectsList: Project[] = [
   {
     id: 2,
     name: "Werewolf Online",
-    description: "A multiplayer android mobile game that has two teams (werewolfs and villagers) competing to kill each other , the team that all his members dies first lose the game . It contains a lot of feature like firends chats, groups and voice chat for group games.",
+    description: "A multiplayer android mobile game that has two teams (werewolfs and villagers) competing to kill each other , the team that all his members dies first lose the game. It contains feature like firends chats, groups and voice chat.",
     imagePath: "/screenshots/covers/werewolf.jpg",
     category: ProjectCategory.android,
     url: "https://github.com/laitooo/Werewolf-Online",
@@ -36,7 +36,7 @@ export const projectsList: Project[] = [
   {
     id: 6,
     name: "Riwayat space",
-    description: "The space of novels is a mobile application that offers you novels of backward classifications to read and with a professional Arabic translation. It has several features like Ease and simplicity of use, a fast and easy application to navigate between novels and chapters",
+    description: "The space of novels is a mobile application that offers you novels to read and with a professional Arabic translation. It has several features like Ease and simplicity of use, a fast and easy application to navigate between novels and chapters",
     imagePath: "/screenshots/covers/novels.jpg",
     category: ProjectCategory.flutter,
     url: "https://play.google.com/store/apps/details?id=zxc.laitooo.flutter.riwayat_space",
@@ -68,11 +68,11 @@ export const projectsList: Project[] = [
     id: 11,
     name: "Space shooter",
     description: "Simple Space Shooter game using C# with Unity. The game theme is 'The game is a liar'",
-    imagePath: "/screenshots/cover/space_shooter.jpg",
+    imagePath: "/screenshots/covers/space.JPG",
     category: ProjectCategory.unity,
     url: "https://laitooo.github.io/Space-Shooter/",
     urlType: UrlType.demo,
-    screenshots: ["/screenshots/simsimy/1.JPG", "/screenshots/simsimy/2.JPG", "/screenshots/simsimy/3.JPG", "/screenshots/simsimy/4.JPG",],
+    screenshots: ["/screenshots/space/1.JPG", "/screenshots/space/2.JPG", "/screenshots/space/3.JPG", "/screenshots/space/4.JPG",],
   },
   {
     id: 8,

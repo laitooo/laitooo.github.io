@@ -8,7 +8,7 @@ const ProjectCard = (probs: {project: Project}) => {
           <img src={probs.project.imagePath} alt={probs.project.name} 
           className="w-full h-48 object-cover" />
         </figure>
-        <div className="card-body h-auto lg:h-72">
+        <div className="card-body h-80">
           <h2 className="text-white text-2xl font-semibold">{probs.project.name}</h2>
           <p className="text-base">{probs.project.description}</p>
           <div className="card-actions mt-2">
