@@ -3,6 +3,7 @@ import Footer from '../../../components/footer'
 import NavBar from '../../../components/navbar'
 import { projectsList } from '../../../data/projectsList'
 import { Carousel } from "flowbite-react"
+import MetaData from '../../../components/metadata'
 
 
 
@@ -19,6 +20,7 @@ const ProjectDetails = () => {
 
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
+      <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio project details page"></MetaData>
       <div className="backdrop-blur-sm">
         <NavBar />
         <div className="py-20">

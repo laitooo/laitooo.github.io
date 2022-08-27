@@ -3,6 +3,7 @@ import Footer from '../../components/footer'
 import NavBar from '../../components/navbar'
 import { Document, Page, pdfjs } from 'react-pdf';
 import React, { useState, useEffect } from "react";
+import MetaData from '../../components/metadata'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
     const size = useWindowSize();
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
+            <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio cv page"></MetaData>
             <div className="backdrop-blur-sm">
                 <NavBar />
                 <div className="grid place-items-center">

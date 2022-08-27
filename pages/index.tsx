@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Footer from '../components/footer'
 import NavBar from '../components/navbar'
+import MetaData from '../components/metadata'
 
 const Home: NextPage = () => {
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
+            <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio home page"></MetaData>
             <div className="backdrop-blur-sm">
                 <NavBar />
                 <div className="mx-10 md:mx-16 lg:mx-40 my-10 flex flex-col md:flex-row">

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { Project, ProjectCategory } from '../../models/project'
 import NavBar from '../../components/navbar'
 import { useRouter } from 'next/router'
+import MetaData from '../../components/metadata'
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
   const openProjectDetails = (id: number) => {
     router.push({
       pathname: '/projects/project',
-      query: { "id": id},
+      query: { "id": id },
     });
   }
 
@@ -27,9 +28,10 @@ const Home: NextPage = () => {
     setProjectsList(projectsList.filter((project) => project.category == category));
   }
 
-  
+
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
+      <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio projects list page"></MetaData>
       <div className="backdrop-blur-sm">
         <NavBar />
         <div className="px-10 py-5 gap-y-5">
