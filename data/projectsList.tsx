@@ -4,7 +4,7 @@ export const projectsList: Project[] = [
   {
     id: 1,
     name: "Manga Online",
-    description: "It's a free application for reading Asian manga on the mobile phone. A simple yet effective app that provides a great reading experience Simplicity and speed in downloading chapters. 10k+ downloads on Google play.",
+    description: "It's an Android app for reading Asian manga. A simple yet effective app that provides a great reading experience Simplicity and speed in downloading chapters. 100k+ downloads on Google play with a 4.2 rate.",
     imagePath: "/screenshots/covers/manga.jpg",
     category: ProjectCategory.flutter,
     url: "https://play.google.com/store/apps/details?id=zxc.laitooo.manga.online",
@@ -15,7 +15,7 @@ export const projectsList: Project[] = [
   {
     id: 2,
     name: "Werewolf Online",
-    description: "A multiplayer android mobile game that has two teams (werewolfs and villagers) competing to kill each other , the team that all his members dies first lose the game. It contains feature like firends chats, groups and voice chat.",
+    description: "A multiplayer startegy game for android, that has two teams (werewolfs and villagers) competing to kill each other , the team that all his members dies first lose the game. It contains feature like firends chats, groups and voice chat.",
     imagePath: "/screenshots/covers/werewolf.jpg",
     category: ProjectCategory.android,
     url: "https://github.com/laitooo/Werewolf-Online",
@@ -26,7 +26,7 @@ export const projectsList: Project[] = [
   {
     id: 3,
     name: "Plants vs zombies clone",
-    description: "A simple Plants vs zombies game clone made in unity with C#.",
+    description: "A tower defence game developed using Unity with C#, clone to the famous Plants vs zombies game.",
     imagePath: "/screenshots/covers/pvz.jpg",
     category: ProjectCategory.unity,
     url: "https://www.youtube.com/watch?v=vn2zIqOBnsc",
@@ -36,7 +36,7 @@ export const projectsList: Project[] = [
   {
     id: 6,
     name: "Riwayat space",
-    description: "The space of novels is a mobile application that offers you novels to read and with a professional Arabic translation. It has several features like Ease and simplicity of use, a fast and easy application to navigate between novels and chapters",
+    description: "This is an Android app that offers you novels to read with a professional Arabic translation. It has several features like Ease and simplicity of use, a fast and easy application to navigate between novels and chapters.",
     imagePath: "/screenshots/covers/novels.jpg",
     category: ProjectCategory.flutter,
     url: "https://play.google.com/store/apps/details?id=zxc.laitooo.flutter.riwayat_space",
@@ -57,7 +57,7 @@ export const projectsList: Project[] = [
   {
     id: 10,
     name: "Sudoku",
-    description: "The famous sudoku game developed into mobile app using flutter (dart).",
+    description: "The famous sudoku game developed into mobile app using Flutter with dart.",
     imagePath: "/screenshots/covers/sudoku.jpg",
     category: ProjectCategory.flutter,
     url: "https://github.com/laitooo/Sudoku",
@@ -67,7 +67,7 @@ export const projectsList: Project[] = [
   {
     id: 11,
     name: "Space shooter",
-    description: "Simple Space Shooter game using C# with Unity. The game theme is 'The game is a liar'",
+    description: "Simple Space Shooter game developed using C# with Unity. The game theme is 'The game is a liar'.",
     imagePath: "/screenshots/covers/space.JPG",
     category: ProjectCategory.unity,
     url: "https://laitooo.github.io/Space-Shooter/",
@@ -77,7 +77,7 @@ export const projectsList: Project[] = [
   {
     id: 8,
     name: "Simsimy Launcher",
-    description: "An Android home launcher for kids tablets used to set limits and control the child's action. developed using Java",
+    description: "A home launcher for kids tablets used to set limits and control the child's action. developed using Android with Java.",
     imagePath: "/screenshots/covers/simsimy.jpg",
     category: ProjectCategory.android,
     url: "",
@@ -87,7 +87,7 @@ export const projectsList: Project[] = [
   {
     id: 9,
     name: "Simsimy Parent control",
-    description: "An android app for parents to control the child phone home launcher settings",
+    description: "An android app for parents to control the child phone home launcher settings.",
     imagePath: "/screenshots/covers/parent.jpg",
     category: ProjectCategory.android,
     url: "",
@@ -97,7 +97,7 @@ export const projectsList: Project[] = [
   {
     id: 4,
     name: "Endless runner",
-    description: "Endless running game sample made using Unity with C#.",
+    description: "A simple endless runner game developed using Unity with C#",
     imagePath: "/screenshots/covers/runner.jpg",
     category: ProjectCategory.unity,
     url: "https://www.youtube.com/watch?v=vn2zIqOBnsc",
@@ -107,7 +107,7 @@ export const projectsList: Project[] = [
   {
     id: 5,
     name: "Forward",
-    description: "Forward is a website to a productivity juggernaut, tasks and weekly planner in one place.",
+    description: "Forward is a website to a productivity juggernaut, tasks and weekly planner in one place, developed using Flutter with dart.",
     imagePath: "/screenshots/covers/forward.jpg",
     category: ProjectCategory.flutter,
     url: "https://todo-app-b95a0.web.app/#/",
