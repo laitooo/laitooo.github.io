@@ -18,26 +18,32 @@ const Home: NextPage = () => {
                 </div>
                 <div className="grid place-items-center mt-20 md:mx-16 py-12 mx-4 lg:mx-40 card bg-violet-700/[.35]">
                     <p className="text-white uppercase text-3xl lg:text-4xl font-bold">About</p>
-                    <p className="mt-10 mx-4 lg:mx-20 lg:leading-10 text-white text-center text-xl">Hello! I&apos;m Alzobair, a senior software developer; Experienced in mobile apps development. Interested in developing games and learning everything. Enjoys implementing Artificial intelligence ideas in mobile apps.</p>
+                    <p className="mt-10 mx-4 lg:mx-20 lg:leading-10 text-white text-center text-xl">Hello! I&apos;m Alzobair (or laitooo), a senior software developer; Experienced in mobile apps development. Interested in developing games and learning everything. Enjoys implementing Artificial intelligence ideas in mobile apps.</p>
                     <a href="/files/alziberMohammedCv.pdf" className="btn btn-wide btn-outline mt-10" target="_blank" download="">Download my cv</a>
                 </div>
                 <div className="grid place-items-center mx-4 md:mx-16 lg:mx-40 my-20 py-12 card bg-violet-700/[.35]">
                     <p className="text-white uppercase text-3xl lg:text-4xl font-bold">What i do</p>
                     <div className="px-10 pt-10 flex flex-col gap-8 md:gap-4 md:flex-row">
                         <div className="grid place-items-center">
-                            <img alt="Android" src="/icons/android.svg" className="mt-5 h-32" />
-                            <h4 className="my-5 text-3xl">Android</h4>
-                            <p className="text-white text-center text-xl">As an Android developer, I have experience in devloping android mobile apps using Java, Kotlin and XML</p>
+                            <div className="h-36">
+                                <img alt="Android" src="/icons/android.svg" className="h-32" />
+                                <h4 className="text-3xl text-center mt-4">Android</h4>
+                            </div>
+                            <p className="mt-16 text-white text-center text-xl">As an Android developer, I have experience in devloping android mobile apps using Java, Kotlin and XML.</p>
                         </div>
                         <div className="grid place-items-center">
-                            <img alt="Android" src="/icons/flutter.svg" className="mt-5 h-32" />
-                            <h4 className="my-5 text-3xl">Flutter</h4>
-                            <p className="text-white text-center text-xl">Utilising flutter frameworks with Dart language, I&apos;ve developed many several mobile and web applications</p>
+                            <div className="h-36">
+                                <img alt="Flutter" src="/icons/flutter.svg" className="h-32" />
+                                <h4 className="text-3xl text-center mt-4">Flutter</h4>
+                            </div>
+                            <p className="mt-16 text-white text-center text-xl">Utilising flutter frameworks with Dart language, I&apos;ve developed several mobile and web applications.</p>
                         </div>
                         <div className="grid place-items-center">
-                            <img alt="Android" src="/icons/unity.png" className="mt-5 h-32" />
-                            <h4 className="my-5 text-3xl text-center">Game development</h4>
-                            <p className="text-white text-center text-xl">In my free time i used in unity with C# to develop clones from famous games like plants vs zombies</p>
+                            <div className="h-36">
+                                <img alt="Unity" src="/icons/unity.png" className="h-32" />
+                                <h4 className="text-3xl text-center mt-4">Unity</h4>
+                            </div>
+                            <p className="mt-16 text-white text-center text-xl">In my free time I am learning game development using unity with C#. developed few small games so far.</p>
                         </div>
                     </div>
                 </div>
