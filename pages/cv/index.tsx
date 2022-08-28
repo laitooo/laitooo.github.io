@@ -20,6 +20,7 @@ const Home: NextPage = () => {
                         className="btn btn-wide btn-outline mt-28 mb-16"
                         target="_blank" download={true}>Download my cv</a>
                     <Document
+                        renderMode="svg"
                         file={"/files/alziberMohammedCv.pdf"}
                         onLoadSuccess={(pdf) => {
                             setNumPages(pdf.numPages);
