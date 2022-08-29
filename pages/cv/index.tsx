@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
             <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio cv page"></MetaData>
-            <div className="backdrop-blur-sm">
+            <div className="backdrop-blur">
                 <NavBar />
                 <div className="grid place-items-center">
                     <a href="/files/alziberMohammedCv.pdf"
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                         {
                             Array.from(new Array(numPages), (el, index) => (
                                 <Page
-                                width={size.width - 20}
+                                width={size.width * 0.8}
                                     className="mt-10"
                                     key={`page_${index + 1}`} pageNumber={index + 1} />
                             ))
