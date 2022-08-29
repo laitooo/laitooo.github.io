@@ -8,7 +8,7 @@ const NavBar: NextPage = () => {
 
 	return (
 		<div className="sticky top-0 z-10">
-			<div className="backdrop-filter backdrop-blur-lg hidden lg:flex">
+			<div className="backdrop-filter backdrop-blur-lg hidden lg:flex bg-white/[.1]">
 				<div className="navbar bg-opacity-50">
 					<div className="flex-1">
 						<Link href=".">

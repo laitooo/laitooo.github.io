@@ -10,7 +10,7 @@ const ProjectCard = (probs: {project: Project}) => {
         </figure>
         <div className="card-body h-80">
           <h2 className="text-white text-2xl font-semibold">{probs.project.name}</h2>
-          <p className="text-base">{probs.project.description}</p>
+          <p className="text-base text-justify">{probs.project.description}</p>
           <div className="card-actions mt-2">
             {
               getButton(probs.project.urlType, probs.project.url)
