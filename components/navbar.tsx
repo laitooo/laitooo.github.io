@@ -49,7 +49,7 @@ const NavBar: NextPage = () => {
 			<div className="navbar bg-opacity-50 backdrop-filter backdrop-blur-lg lg:hidden">
 				<div className="dropdown">
 					<label tabIndex={0} className="lg:hidden">
-						<img src="/icons/drawer.svg" className="btn btn-ghost w-14 h-14"></img>
+						<img src="/icons/drawer.svg" className="btn btn-ghost w-14 h-14" alt="Drawer"></img>
 					</label>
 					<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 						<li>
