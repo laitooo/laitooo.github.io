@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                 <div className="grid place-items-center mt-20 md:mx-16 py-12 mx-4 lg:mx-40 card bg-violet-700/[.35]">
                     <p className="text-white uppercase text-3xl lg:text-4xl font-bold">About</p>
                     <p className="mt-10 mx-4 lg:mx-20 lg:leading-10 text-white text-center text-xl">Hello! I&apos;m Alzobair (or laitooo), a software developer; Experienced in mobile apps development. Interested in developing games and learning everything. Enjoys implementing Artificial intelligence ideas in mobile apps.</p>
-                    <a href="/files/alziberMohammedCv.pdf" className="btn btn-wide btn-outline mt-10" target="_blank" download="">Download my cv</a>
+                    <a href="/files/AlzobairMohammed.pdf" className="btn btn-wide btn-outline mt-10" target="_blank" download="">Download my cv</a>
                 </div>
                 <div className="grid place-items-center mx-4 md:mx-16 lg:mx-40 my-20 py-12 card bg-violet-700/[.35]">
                     <p className="text-white uppercase text-3xl lg:text-4xl font-bold">What i do</p>
