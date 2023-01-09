@@ -11,14 +11,14 @@ const WorkExperience: NextPage = () => {
             <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio projects list page"></MetaData>
             <div className="backdrop-blur">
                 <NavBar />
-                <div className="text-white text-3xl font-bold pl-20 pt-16">My Work experience :</div>
-                <div className="grid place-items-center items-start px-20 py-16">
-                    <ol className="relative border-l border-white">
+                <div className="text-white text-xl md:text-3xl font-bold px-4 md:pl-20 py-4 md:py-16">My Work experience :</div>
+                <div className="grid place-items-center items-start px-4 md:px-20">
+                    <ol className="relative border-l border-white mb-4 md:mb-20">
                         <div>
                             {
                                 jobsList.sort((a, b) => (a.id < b.id ? -1 : 1)).map((item, index) => {
                                     return (
-                                        <div key={index} className="pl-4 pt-10">
+                                        <div key={index} className="pl-2 md:pl-4 pt-2 md:pt-10">
                                             <JopCard job={item} />
                                         </div>
                                     )
