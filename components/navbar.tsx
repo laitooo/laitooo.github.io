@@ -28,6 +28,11 @@ const NavBar: NextPage = () => {
 								</Link>
 							</li>
 							<li className="ml-2">
+								<Link href="/career">
+									Career
+								</Link>
+							</li>
+							<li className="ml-2">
 								<Link href="/publications">
 									Publications
 								</Link>
@@ -60,6 +65,11 @@ const NavBar: NextPage = () => {
 						<li>
 							<Link href="/projects">
 								Projects
+							</Link>
+						</li>
+						<li>
+							<Link href="/career">
+								Career
 							</Link>
 						</li>
 						<li>
