@@ -46,10 +46,10 @@ function getButton(urlType: UrlType, url: string) {
           </span>
         </button>
       </a>
-    case UrlType.demo:
+    case UrlType.website:
       return <a href={url}>
         <button className="btn btn-secondary">
-          <p className="pl-2 pr-12">Try demo</p>
+          <p className="pl-2 pr-12 text-white">Go to website</p>
         </button>
       </a>
     case UrlType.googlePlay:
