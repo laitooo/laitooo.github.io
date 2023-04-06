@@ -4,6 +4,8 @@ export type Jop = {
     details: string;
     startDate: String;
     endDate: String;
+    workDuration: string;
+    toolsUsed: string;
     companyName: string;
     companyUrl: string;
 }
