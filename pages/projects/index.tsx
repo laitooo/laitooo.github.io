@@ -51,10 +51,14 @@ const Home: NextPage = () => {
             <p className="text-xl">Android</p>
           </button>
 
-
           <button className="btn ml-5 mt-2 md:mt-0" onClick={() => showCategory(ProjectCategory.unity)}>
             <img alt="Unity" src="/icons/unity.png" className="w-6 mr-2" />
             <p className="text-xl">Unity</p>
+          </button>
+
+          <button className="btn ml-5 mt-2 md:mt-0" onClick={() => showCategory(ProjectCategory.nextJs)}>
+            <img alt="Unity" src="/icons/nextjs.svg" className="w-8 mr-4" />
+            <p className="text-xl">NextJs</p>
           </button>
 
         </div>

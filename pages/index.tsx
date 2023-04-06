@@ -23,22 +23,29 @@ const Home: NextPage = () => {
                 </div>
                 <div className="grid place-items-center mx-4 md:mx-16 lg:mx-40 my-20 py-12 card bg-violet-700/[.35]">
                     <p className="text-white uppercase text-3xl lg:text-4xl font-bold">What i do</p>
-                    <div className="px-10 pt-10 flex flex-col gap-8 md:gap-4 md:flex-row">
-                        <div className="grid place-items-center">
-                            <div className="h-36">
-                                <img alt="Android" src="/icons/android.svg" className="h-32" />
-                                <h4 className="text-3xl text-center mt-4">Android</h4>
-                            </div>
-                            <p className="mt-16 text-white text-center text-xl">As an Android developer, I have experience in devloping android mobile apps using Java, Kotlin and XML.</p>
-                        </div>
-                        <div className="grid place-items-center">
+                    <div className="px-10 pt-10 grid grid-cols-2 gap-8 md:gap-4 md:flex-row">
+                        <div className="grid place-items-center px-4">
                             <div className="h-36">
                                 <img alt="Flutter" src="/icons/flutter.svg" className="h-32" />
                                 <h4 className="text-3xl text-center mt-4">Flutter</h4>
                             </div>
                             <p className="mt-16 text-white text-center text-xl">Utilising flutter frameworks with Dart language, I&apos;ve developed several mobile and web applications.</p>
                         </div>
-                        <div className="grid place-items-center">
+                        <div className="grid place-items-center px-4">
+                            <div className="h-36">
+                                <img alt="NextJs" src="/icons/nextjs.svg" className="h-32" />
+                                <h4 className="text-3xl text-center mt-4">NextJs</h4>
+                            </div>
+                            <p className="mt-16 text-white text-center text-xl">Recently I started working as a web developer using NextJs as front-end and NestJs as a backend.</p>
+                        </div>
+                        <div className="grid place-items-center mt-8 px-4">
+                            <div className="h-36">
+                                <img alt="Android" src="/icons/android.svg" className="h-32" />
+                                <h4 className="text-3xl text-center mt-4">Android</h4>
+                            </div>
+                            <p className="mt-16 text-white text-center text-xl">As an Android developer, I have experience in devloping android mobile apps using Java, Kotlin and XML.</p>
+                        </div>
+                        <div className="grid place-items-center mt-8 px-4">
                             <div className="h-36">
                                 <img alt="Unity" src="/icons/unity.png" className="h-32" />
                                 <h4 className="text-3xl text-center mt-4">Unity</h4>

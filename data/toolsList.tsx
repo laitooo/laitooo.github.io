@@ -66,22 +66,22 @@ export const toolsList: Tool[] = [
   },
   {
     index: 5,
-    name: "Node js",
-    icon: "/icons/nodejs.svg"
-  },
-  {
-    index: 6,
-    name: "Tensorflow",
-    icon: "/icons/tensorflow.svg"
-  },
-  {
-    index: 7,
     name: "Next js",
     icon: "/icons/nextjs.svg"
   },
   {
+    index: 6,
+    name: "Node js",
+    icon: "/icons/nodejs.svg"
+  },
+  {
+    index: 7,
+    name: "Tensorflow",
+    icon: "/icons/tensorflow.svg"
+  },
+  {
     index: 8,
-    name: "Git",
-    icon: "/icons/git.svg"
+    name: "Nest Js",
+    icon: "/icons/nestjs.svg"
   }
 ]
