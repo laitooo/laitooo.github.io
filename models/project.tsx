@@ -1,14 +1,15 @@
 export enum ProjectCategory {
     android,
     flutter,
-    unity
+    unity,
+    nextJs
 }
 
 export enum UrlType {
     none,
     github,
     googlePlay,
-    demo,
+    website,
     youtube,
 }
 
