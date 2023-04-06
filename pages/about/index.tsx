@@ -19,14 +19,15 @@ const Home: NextPage = () => {
                         <p className="text-white text-xl md:text-2xl lg:text-3xl mt-4 leading-relaxed">
                             Hi Everyone, I am <span className="text-purple-500">Alzobair Mohammed </span>
                             from <span className="text-purple-500"> Khartoum, Sudan.</span>
-                            <br />I am a software developer with a  bechloras in Civil enginerring (LOL).
+                            <br />I am a Fresh graduate with a BS.c degree in Civil engineering and a software developer with more than 3 years
+                            experience in the industry.
                             <br />
                             <br />
                             Apart from coding, some other activities that I love to do:
                             <br />&emsp;- Learning new languages.
                             <br />&emsp;- Swimming.
                             <br />&emsp;- Reading books.
-                            <br />&emsp;- Watching anime and tv series.
+                            <br />&emsp;- Watching anime and tv shows.
                             <br />&emsp;- Playing league of legends.
                         </p>
                     </div>
