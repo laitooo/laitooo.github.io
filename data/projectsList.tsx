@@ -26,7 +26,7 @@ export const projectsList: Project[] = [
   {
     id: 3,
     name: "Plants vs zombies clone",
-    description: "A tower defence game developed using Unity with C#, clone to the famous Plants vs zombies game.",
+    description: "A 3d clone to the famous Plants vs zombies game, It's a game where you try to stop the zombies from eating the brains using plants. Developed using Unity with C#.",
     imagePath: "/screenshots/covers/pvz.jpg",
     category: ProjectCategory.unity,
     url: "https://www.youtube.com/watch?v=vn2zIqOBnsc",
@@ -34,7 +34,7 @@ export const projectsList: Project[] = [
     screenshots: ["/screenshots/pvz/1.JPG", "/screenshots/pvz/2.JPG", "/screenshots/pvz/3.JPG", "/screenshots/pvz/4.JPG",],
   },
   {
-    id: 7,
+    id: 9,
     name: "Riwayat space",
     description: "This is an Android app that offers you novels to read with a professional Arabic translation. It has several features like Ease and simplicity of use, a fast and easy application to navigate between novels and chapters.",
     imagePath: "/screenshots/covers/novels.jpg",
@@ -45,7 +45,7 @@ export const projectsList: Project[] = [
     "/screenshots/novels/5.png",],
   },
   {
-    id: 8,
+    id: 6,
     name: "Flutter manga scrapper",
     description: "A flutter mobile application for scraping and downloading manga from Manga town.",
     imagePath: "/screenshots/covers/scrapper.jpg",
@@ -55,7 +55,7 @@ export const projectsList: Project[] = [
     screenshots: ["/screenshots/scrapper/1.png", "/screenshots/scrapper/2.png", "/screenshots/scrapper/3.png", "/screenshots/scrapper/4.png",],
   },
   {
-    id: 11,
+    id: 13,
     name: "Sudoku",
     description: "The famous sudoku game developed into mobile app using Flutter with dart.",
     imagePath: "/screenshots/covers/sudoku.jpg",
@@ -75,7 +75,7 @@ export const projectsList: Project[] = [
     screenshots: ["/screenshots/space/1.JPG", "/screenshots/space/2.JPG", "/screenshots/space/3.JPG", "/screenshots/space/4.JPG",],
   },
   {
-    id: 9,
+    id: 10,
     name: "Simsimy Launcher",
     description: "A home launcher for kids tablets used to set limits and control the child's action. developed using Android with Java.",
     imagePath: "/screenshots/covers/simsimy.jpg",
@@ -85,7 +85,7 @@ export const projectsList: Project[] = [
     screenshots: ["/screenshots/simsimy/1.JPG", "/screenshots/simsimy/2.JPG", "/screenshots/simsimy/3.JPG", "/screenshots/simsimy/4.JPG",],
   },
   {
-    id: 10,
+    id: 11,
     name: "Simsimy Parent control",
     description: "An android app for parents to control the child phone home launcher settings.",
     imagePath: "/screenshots/covers/parent.jpg",
@@ -105,7 +105,7 @@ export const projectsList: Project[] = [
     screenshots: ["/screenshots/runner/1.png", "/screenshots/runner/2.png", "/screenshots/runner/3.png", "/screenshots/runner/4.png",],
   },  
   {
-    id: 6,
+    id: 7,
     name: "Forward",
     description: "Forward is a website to a productivity juggernaut, tasks and weekly planner in one place, developed using Flutter with dart.",
     imagePath: "/screenshots/covers/forward.jpg",
@@ -117,11 +117,23 @@ export const projectsList: Project[] = [
   {
     id: 4,
     name: "Killed by Fekra",
-    description: "It's the Graveyard of a list of a great projects that started in Fekra and was not continued or published.",
+    description: "It's the Graveyard of a list of a great projects that started in Fekra tech company and was not continued or published.",
     imagePath: "/screenshots/covers/fekra.png",
     category: ProjectCategory.nextJs,
     url: "https://killedbyfekra.vercel.app",
     urlType: UrlType.website,
     screenshots: ["/screenshots/fekra/1.png", "/screenshots/fekra/2.png", "/screenshots/fekra/3.png", "/screenshots/fekra/4.png"],
+  },
+  {
+    id: 8,
+    name: "Bibliotheque",
+    description: "A bookshop mobile app, This project implements all logic and ui using Mock data repository.",
+    imagePath: "/screenshots/covers/bibliotheque.jpg",
+    category: ProjectCategory.flutter,
+    url: "https://github.com/laitooo/bibliotheque",
+    urlType: UrlType.github,
+    screenshots: ["/screenshots/bibliothque/1.jpg", "/screenshots/bibliothque/2.jpg", "/screenshots/bibliothque/3.jpg",
+    "/screenshots/bibliothque/4.jpg", "/screenshots/bibliothque/5.jpg", "/screenshots/bibliothque/6.jpg",
+    "/screenshots/bibliothque/7.jpg", "/screenshots/bibliothque/8.jpg"],
   }
 ]
