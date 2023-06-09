@@ -3,25 +3,36 @@ import NavBar from '../../../components/navbar'
 import { projectsList } from '../../../data/projectsList'
 import { Carousel } from "flowbite-react"
 import MetaData from '../../../components/metadata'
-
-
-
+import { getButton } from '../../../components/project'
+import { Project } from '../../../models/project'
+import ErrorPage from '../../../components/errorPage'
 
 const ProjectDetails = () => {
   var id = 1;
+  var project: Project | undefined;
   if (typeof window !== "undefined") {
     const url = new URL(window.location.href);
-    var id = Number(url.searchParams.get("id"));
+    if (url.searchParams.has("id")) {
+      var id = Number(url.searchParams.get("id"));
+      project = projectsList.find((e) => e.id == id);
+    }
   }
 
-  const project = projectsList.find((e) => e.id == id);
-  // const numScreenshots = project?.screenshots.length;
+
+  if (project === undefined) {
+    return <ErrorPage errorMsg="Couldn't find the project with the specified ID"></ErrorPage>
+  }
 
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
       <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio project details page"></MetaData>
       <div className="backdrop-blur">
         <NavBar />
+        <div className='pt-10 pl-10 text-white text-2xl font-bold'>{project?.name}:</div>
+        <div className='pt-4 pl-10 text-white text-xl'>{project?.description}</div>
+        <div className='pt-4 pl-10'>
+          {getButton(project?.urlType, project?.url)}
+        </div>
         <div className="py-20">
           <Carousel slideInterval={5000}>
             {
@@ -33,49 +44,10 @@ const ProjectDetails = () => {
             }
           </Carousel>
         </div>
-        {/* <div className="carousel w-full h-[45rem] pt-10">
-          {
-            project?.screenshots.map((value, index) =>
-              <div id={"image" + (index + 1).toString()} className="carousel-item  relative w-full ">
-                <img src={value} className="content-center object-contain w-full" />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href={previousButton(index + 1, numScreenshots!)} className="btn btn-circle">❮</a>
-                  <a href={nextButton(index + 1, numScreenshots!)} className="btn btn-circle">❯</a>
-                </div>
-              </div>
-            )
-          }
-        </div>
-        <div className="flex justify-center w-full py-20 gap-2">
-          {
-            project?.screenshots.map((value, index) =>
-              <a href={"#image" + (index + 1)} className="btn">{(index + 1).toString()}</a>
-            )
-          }
-        </div> */}
         <Footer />
       </div>
     </div>
   )
 }
-
-// function nextButton(current: number, length: number) {
-//   console.log(current, " - ", length);
-//   if (current === length) {
-//     console.log("next : 1")
-//     return "#image1";
-//   } else {
-//     console.log("next: " + (current + 1).toString())
-//     return "#image" + (current + 1).toString();
-//   }
-// }
-
-// function previousButton(current: number, length: number) {
-//   if (current === 1) {
-//     return "#image" + length.toString();
-//   } else {
-//     return "#image" + (current - 1).toString();
-//   }
-// }
 
 export default ProjectDetails
