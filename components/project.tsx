@@ -22,7 +22,7 @@ const ProjectCard = (probs: {project: Project}) => {
   )
 }
 
-function getButton(urlType: UrlType, url: string) {
+export const getButton = (urlType: UrlType, url: string) => {
   switch (+urlType) {
     case UrlType.github:
       return <a href={url}>
