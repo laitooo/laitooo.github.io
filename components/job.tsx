@@ -8,8 +8,8 @@ const JopCard = (probs: { job: Jop }) => {
             <h3 className="text-xl md:text-3xl font-bold text-white pt-3">{probs.job.title} at
                 <a href={probs.job.companyUrl} className="underline pl-2">{probs.job.companyName}</a>
             </h3>
-            <p className="mb-4 text-lg md:text-xl font-normal text-white pt-3">{probs.job.details.split("\n").map((v) => {
-                return <p>{v}</p>
+            <p className="mb-4 text-lg md:text-xl font-normal text-white pt-3">{probs.job.details.split("\n").map((v, i) => {
+                return <p key={i}>{v}</p>
             })}</p>
             <p className="mb-4 text-lg md:text-xl font-normal text-white pt-3">{probs.job.toolsUsed}</p>
         </li>
