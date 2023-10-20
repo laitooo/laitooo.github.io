@@ -4,4 +4,5 @@ export type Paper = {
     conference: string;
     date: Date;
     url: string;
+    journalUrl: string;
 }
