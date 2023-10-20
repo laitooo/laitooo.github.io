@@ -16,11 +16,11 @@ const Home: NextPage = () => {
             <div className="backdrop-blur">
                 <NavBar />
                 <div className="grid place-items-center">
-                    <a href="/files/AlzobairMohammed.pdf"
+                    <a href="/files/AlzobairElkhalifaCv.pdf"
                         className="btn btn-wide btn-outline mt-28 mb-16"
                         target="_blank" download={true}>Download my cv</a>
                     <Document
-                        file={"/files/AlzobairMohammed.pdf"}
+                        file={"/files/AlzobairElkhalifaCv.pdf"}
                         onLoadSuccess={(pdf) => {
                             setNumPages(pdf.numPages);
                         }}
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
                             ))
                         }
                     </Document>
-                    <a href="/files/AlzobairMohammed.pdf"
+                    <a href="/files/AlzobairElkhalifaCv.pdf"
                         className="btn btn-wide btn-outline mt-16 mb-28"
                         target="_blank" download={true}>Download my cv</a>
                 </div>
