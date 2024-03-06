@@ -10,7 +10,7 @@ const Home: NextPage = () => {
             <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio about me page"></MetaData>
             <div className="backdrop-blur">
                 <NavBar />
-                <div className="flex flex-col lg:flex-row w-full gap-x-12 md:gap-y-12 md:px-16 px-4 lg:px-20">
+                <div className="flex justify-between lg:flex-row w-full gap-x-12 md:gap-y-12 md:px-16 px-4 lg:px-20">
                     <div>
                         <div className="flex flex-row gap-x-2 mt-10 font-bold text-3xl md:text-4xl lg:text-5xl">
                             <p className="text-white">Know Who</p>
