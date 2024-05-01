@@ -18,8 +18,8 @@ const Home: NextPage = () => {
                         </div>
                         <p className="text-white text-xl md:text-2xl lg:text-3xl mt-4 leading-relaxed">
                             Hi Everyone, I am <span className="text-purple-500">Alzobair Mohammed </span>
-                            from <span className="text-purple-500"> Khartoum, Sudan.</span>
-                            <br />I am a Fresh graduate with a BS.c degree in Civil engineering and a software developer with more than 3 years
+                            from <span className="text-purple-500"> Khartoum, Sudan</span> , recently moved to <span className="text-purple-500"> Dubai, UAE</span>
+                            <br />I have a BS.c degree in Civil engineering and a software developer with more than 4 years
                             experience in the industry.
                             <br />
                             <br />
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                     <img alt="illustration" className="mt-20 px-10 md:px-5 lg:px-0" src="/images/illustration.png"/>
                 </div>
                 <div className="grid place-items-center mt-40">
-                    <p className="text-white uppercase text-xl md:text-2xl lg:text-3xl font-bold">Languages used</p>
+                    <p className="text-white uppercase text-xl md:text-2xl lg:text-3xl font-bold">Most used programming languages</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 lg:gap-12 mt-16">
                         {
                             languagesList.map(tool => {
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                     </div>
                 </div>
                 <div className="grid place-items-center mt-40 mb-20">
-                    <p className="text-white uppercase text-xl md:text-2xl lg:text-3xl font-bold">Framework or tools used</p>
+                    <p className="text-white uppercase text-xl md:text-2xl lg:text-3xl font-bold">Most used framework/tools</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 lg:gap-12 mt-16">
                         {
                             toolsList.map(tool => {
