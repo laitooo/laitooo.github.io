@@ -13,7 +13,7 @@ export const jobsList: Jop[] = [
         "that’s more than 110,000 euro.",
         startDate: "Mar 2023",
         endDate: "Until now",
-        workDuration: "10 months",
+        workDuration: "14 months",
         toolsUsed: "ReactJs and NestJs (TypeScript)",
         companyName: "249Startups",
         companyUrl: "https://www.linkedin.com/company/249startups",
@@ -38,7 +38,7 @@ export const jobsList: Jop[] = [
     },
     {
         id: 3,
-        title: "Software developer",
+        title: "Flutter developer",
         details: "Shrek: Service providing customer mobile app using Flutter (Dart) and Firebase." +
         "\n• Collaborated closely with the UI/UX team, ensuring the flawless execution of our design. Ensuring " +
         "the production of a user-friendly and error-free interface." +
@@ -55,7 +55,7 @@ export const jobsList: Jop[] = [
     },
     {
         id: 4,
-        title: "Software developer",
+        title: "Flutter developer",
         details: "Doctorbase: Healthcare mobile app that lets patient have Virtual visits with, developed using Flutter " +
         "(Dart) and Firebase. " +
         "\n• Refined the app's user interface, ensuring it met the highest standards of design precision and " +
