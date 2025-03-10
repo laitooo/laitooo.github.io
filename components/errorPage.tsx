@@ -9,7 +9,7 @@ interface ErrorPageProps {
 const ErrorPage = (props: ErrorPageProps) => {
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
-            <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio project details page"></MetaData>
+            <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio project details page"></MetaData>
             <div className="backdrop-blur">
                 <NavBar />
                 <div className='h-screen grid place-items-center text-2xl text-white font-bold'>

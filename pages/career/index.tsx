@@ -8,7 +8,7 @@ import JopCard from '../../components/job'
 const WorkExperience: NextPage = () => {
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
-            <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio projects list page"></MetaData>
+            <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio projects list page"></MetaData>
             <div className="backdrop-blur">
                 <NavBar />
                 <div className="text-white text-xl md:text-3xl font-bold px-4 md:pl-20 py-4 md:py-16">My Work experience :</div>
