@@ -20,7 +20,7 @@ const Home: NextPage = () => {
                         <p className="text-white text-xl md:text-2xl lg:text-3xl mt-4 leading-relaxed">
                             Hi Everyone, I am <span className="text-purple-500">Alzobair Elkhalifa </span>
                             from <span className="text-purple-500"> Sudan</span>, living in <span className="text-purple-500"> Dubai, UAE</span>.
-                            <br />I have a BS.c degree in Civil engineering. I'm also a software developer with more than 4 years
+                            <br />I have a BS.c degree in Civil engineering. I&apos;m also a software developer with more than 4 years
                             experience in the industry.
                             <br />
                             <br />
