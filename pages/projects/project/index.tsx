@@ -25,7 +25,7 @@ const ProjectDetails = () => {
 
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
-      <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio project details page"></MetaData>
+      <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio project details page"></MetaData>
       <div className="backdrop-blur">
         <NavBar />
         <div className='pt-10 pl-10 text-white text-2xl font-bold'>{project?.name}:</div>

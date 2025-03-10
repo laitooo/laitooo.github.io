@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
   return (
     <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
-      <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio projects list page"></MetaData>
+      <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio projects list page"></MetaData>
       <div className="backdrop-blur">
         <NavBar />
         <div className="px-10 py-5 gap-y-5">

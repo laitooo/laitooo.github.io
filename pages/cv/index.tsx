@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     const size = useWindowSize();
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
-            <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio cv page"></MetaData>
+            <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio cv page"></MetaData>
             <div className="backdrop-blur">
                 <NavBar />
                 <div className="grid place-items-center">

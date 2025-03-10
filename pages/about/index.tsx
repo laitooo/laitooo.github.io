@@ -3,11 +3,12 @@ import Footer from '../../components/footer'
 import NavBar from '../../components/navbar'
 import { languagesList, toolsList } from '../../data/toolsList'
 import MetaData from '../../components/metadata'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
     return (
         <div data-theme="synthwave" className="bg-cover bg-[url('/images/background.jpg')] bg-fixed bg-no-repeat">
-            <MetaData title="Alzobair Mohammed portfolio" description="Alzobair Mohammed's portfolio about me page"></MetaData>
+            <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio about me page"></MetaData>
             <div className="backdrop-blur">
                 <NavBar />
                 <div className="flex justify-between lg:flex-row w-full gap-x-12 md:gap-y-12 md:px-16 px-4 lg:px-20">
@@ -17,13 +18,14 @@ const Home: NextPage = () => {
                             <p className="text-purple-500">I&apos;M</p>
                         </div>
                         <p className="text-white text-xl md:text-2xl lg:text-3xl mt-4 leading-relaxed">
-                            Hi Everyone, I am <span className="text-purple-500">Alzobair Mohammed </span>
-                            from <span className="text-purple-500"> Khartoum, Sudan</span> , recently moved to <span className="text-purple-500"> Dubai, UAE</span>
-                            <br />I have a BS.c degree in Civil engineering and a software developer with more than 4 years
+                            Hi Everyone, I am <span className="text-purple-500">Alzobair Elkhalifa </span>
+                            from <span className="text-purple-500"> Sudan</span>, living in <span className="text-purple-500"> Dubai, UAE</span>.
+                            <br />I have a BS.c degree in Civil engineering. I'm also a software developer with more than 4 years
                             experience in the industry.
                             <br />
                             <br />
                             Apart from coding, some other activities that I love to do:
+                            <br />&emsp;- Travelling <a className='text-purple-500 underline' href='./map'>(Visited countries map)</a>.
                             <br />&emsp;- Learning new languages.
                             <br />&emsp;- Swimming.
                             <br />&emsp;- Reading books.

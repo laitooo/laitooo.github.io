@@ -3,6 +3,21 @@ import { Jop } from '../models/job'
 export const jobsList: Jop[] = [
     {
         id: 1,
+        title: "Front-end Developer",
+        details: "Neo Pass" +
+        "\n• Joined the development of Neo One, a leading fin-tech mobile startup in the UAE. Offering open banking, virtual banking " + 
+        "andcrypto services, built using Flutter." +
+        "\n• Participated in the development and design of Neo-Pass a website for booking flights, travel offers and hotels deals, " + 
+        "offering high discounted flights with the possibility of buying using crypto payments.",
+        startDate: "May 2025",
+        endDate: "Until now",
+        workDuration: "6 months",
+        toolsUsed: "Flutter",
+        companyName: "My NEO Group & Sheikh Al Maktoum NEO Technologies",
+        companyUrl: "https://www.linkedin.com/company/myneogroup/",
+    },
+    {
+        id: 2,
         title: "Full stack Software Developer",
         details: "VentureX: A system that provides fund for local startups." +
         "\n• As the lead developer responsible for enhancing our internal company systems, I used ReactJS" +
@@ -12,14 +27,14 @@ export const jobsList: Jop[] = [
         "\n• Developed a platform for financial requests, this platform helped fund startups with an amount" +
         "that’s more than 110,000 euro.",
         startDate: "Mar 2023",
-        endDate: "Until now",
-        workDuration: "14 months",
+        endDate: "Aug 2024",
+        workDuration: "18 months",
         toolsUsed: "ReactJs and NestJs (TypeScript)",
         companyName: "249Startups",
         companyUrl: "https://www.linkedin.com/company/249startups",
     },
     {
-        id: 2,
+        id: 3,
         title: "Flutter team leader",
         details: "Foodo: Mobile app for selling the remaining restaurants food to customers instead of throwing it " +
         "away using Flutter (Dart) and Firebase " +
@@ -37,7 +52,7 @@ export const jobsList: Jop[] = [
         companyUrl: "https://www.linkedin.com/company/29326768/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BA%2Fzn3PzeTuWryOtbQBVOmg%3D%3D",
     },
     {
-        id: 3,
+        id: 4,
         title: "Flutter developer",
         details: "Shrek: Service providing customer mobile app using Flutter (Dart) and Firebase." +
         "\n• Collaborated closely with the UI/UX team, ensuring the flawless execution of our design. Ensuring " +
@@ -54,7 +69,7 @@ export const jobsList: Jop[] = [
         companyUrl: "https://www.linkedin.com/company/29326768/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BA%2Fzn3PzeTuWryOtbQBVOmg%3D%3D",
     },
     {
-        id: 4,
+        id: 5,
         title: "Flutter developer",
         details: "Doctorbase: Healthcare mobile app that lets patient have Virtual visits with, developed using Flutter " +
         "(Dart) and Firebase. " +
@@ -71,7 +86,7 @@ export const jobsList: Jop[] = [
         companyUrl: "https://www.linkedin.com/company/exit-fund/",
     },
     {
-        id: 5,
+        id: 6,
         title: "Android developer intern",
         details: "I took a small internship to dive more into design patterns and using version control (Git), I also learned to use Kotlin for android development.",
         startDate: "Sep 2020",
@@ -82,7 +97,7 @@ export const jobsList: Jop[] = [
         companyUrl: "https://www.linkedin.com/company/enayatech/people/",
     },
     {
-        id: 6,
+        id: 7,
         title: "Android developer",
         details: "Simsimy: Two android apps for parental control using Java." +
         "\n• Developed the first application, which is a home launcher app designed to empower parents in " +
