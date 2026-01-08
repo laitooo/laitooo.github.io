@@ -41,16 +41,27 @@ const MapComponent: React.FC<MapComponentProps> = ({ selectedCountries }) => {
         },
       });
 
-      map.current!.addLayer({
-        'id': 'highlighted-country',
-        'type': 'fill',
-        'source': 'countries',
-        'paint': {
-            'fill-color': '#00ff00',
-            'fill-opacity': 0.5,
-        },
-        'filter': ['in', ['get', 'iso_a2'], ['literal', selectedCountries]],
-      });
+      var colors = [
+        '#FF5252', '#FF4081', '#7C4DFF', '#536DFE', 
+        '#40C4FF', '#18FFFF', '#64FFDA', '#69F0AE', 
+        '#B2FF59', '#FFD740', '#FFAB40', '#FF6D00', 
+        '#FF8A80', '#E040FB', '#B388FF', '#00E5FF', 
+        '#1DE9B6', '#FFC107', '#D81B60', '#304FFE',
+      ];
+
+
+      for (var i = 0; i < selectedCountries.length; i++){
+        map.current!.addLayer({
+          'id': 'highlighted-country' + i.toString(),
+          'type': 'fill',
+          'source': 'countries',
+          'paint': {
+              'fill-color': colors[Math.floor(Math.random() * colors.length)],
+              'fill-opacity': 0.5,
+          },
+          'filter': ['in', ['get', 'iso_a2'], ['literal', [selectedCountries[i]]]],
+        });
+      } 
 
       // map.current!.on('click', 'highlighted-country', (e) => {
       //   const country = e.features?.[0].properties?.iso_a2;
@@ -80,7 +91,7 @@ const VisitedCountries: NextPage = () => {
       <div>
           <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio visited countries list page"></MetaData>
           <div className="backdrop-blur w-full h-screen">
-              <MapComponent selectedCountries={['SD', 'MY', 'LK', 'AE']} />
+              <MapComponent selectedCountries={['SD', 'MY', 'LK', 'AE', 'KE', 'MA', 'SA']} />
           </div>
       </div >
   )
