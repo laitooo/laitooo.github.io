@@ -81,7 +81,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ selectedCountries }) => {
     });
 
     return () => map.current?.remove();
-  }, []);
+  }, [selectedCountries]);
 
   return <div ref={mapContainer} className="w-screen h-screen" />;
 };
