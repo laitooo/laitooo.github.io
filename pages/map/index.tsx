@@ -91,7 +91,7 @@ const VisitedCountries: NextPage = () => {
       <div>
           <MetaData title="Alzobair Elkhalifa portfolio" description="Alzobair Elkhalifa's portfolio visited countries list page"></MetaData>
           <div className="backdrop-blur w-full h-screen">
-              <MapComponent selectedCountries={['SD', 'MY', 'LK', 'AE', 'KE', 'MA', 'SA']} />
+              <MapComponent selectedCountries={['SD', 'MY', 'LK', 'AE', 'KE', 'MA', 'EG']} />
           </div>
       </div >
   )

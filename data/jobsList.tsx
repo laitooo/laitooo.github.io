@@ -9,9 +9,9 @@ export const jobsList: Jop[] = [
         "andcrypto services, built using Flutter." +
         "\n• Participated in the development and design of Neo-Pass a website for booking flights, travel offers and hotels deals, " + 
         "offering high discounted flights with the possibility of buying using crypto payments.",
-        startDate: "May 2025",
+        startDate: "May 2024",
         endDate: "Until now",
-        workDuration: "6 months",
+        workDuration: "26 years",
         toolsUsed: "Flutter",
         companyName: "My NEO Group & Sheikh Al Maktoum NEO Technologies",
         companyUrl: "https://www.linkedin.com/company/myneogroup/",
