@@ -3,8 +3,7 @@ import mapboxgl from "mapbox-gl";
 import { NextPage } from "next";
 import MetaData from "../../components/metadata";
 
-const MAP_ACCESS_TOKEN = 'pk.eyJ1IjoibGFpdG9vbyIsImEiOiJjbTVseDduaDgwd2pvMmpzY2N5b2puMjEyIn0.fAA1T-_H1gzJTXce-Aedbg';
-mapboxgl.accessToken = MAP_ACCESS_TOKEN; // Replace with your Mapbox access token
+mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ?? '';
 
 interface MapComponentProps {
   selectedCountries: string[];
